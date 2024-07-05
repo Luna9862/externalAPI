@@ -6,6 +6,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>COVID-19 Data Fetcher</title>
+  <style>
+    body {
+      /* Adjust background image URL to your own image */
+      background-image: url('virus-4937553_640.jpg');
+      /* Ensure the background image covers the entire body */
+      background-size: cover;
+      /* Center the background image */
+      background-position: center;
+      /* Set background to fixed so it doesn't scroll with content */
+      background-attachment: fixed;
+      /* Optional: Add some padding or margin to content */
+      padding: 20px;
+    }
+    h1 {
+      color: white; /* Set h1 text color to white */
+    }
+    #output {
+      background-color: rgba(229, 197, 197, 0.5); /* Adjust opacity here (0.5 is 50% opaque) */
+      padding: 20px;
+      margin-top: 20px; /* Adjust margin as needed */
+      border-radius: 10px; /* Rounded corners for the box */
+      color:aliceblue
+    }
+
+    #output h2 {
+      margin-bottom: 10px; /* Optional: Adjust spacing */
+    }
+
+    #output p {
+      margin: 5px 0; /* Optional: Adjust spacing */
+    }
+
+    /* Form styling (optional) */
+    #dataForm {
+      margin-bottom: 20px;
+    }
+
+    #dataForm label {
+      color: white;
+    }
+
+    #dataForm input[type="text"] {
+      padding: 5px;
+      margin-left: 10px;
+    }
+
+    #dataForm button {
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #dataForm button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <h1>COVID-19 Data Fetcher</h1>

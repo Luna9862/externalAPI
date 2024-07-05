@@ -5,11 +5,11 @@ async function fetchData(countryCode) {
       const data = await response.json();
   
       // Update HTML elements with fetched data
-      document.getElementById('countryName').textContent = data.country;
-      document.getElementById('confirmedCases').textContent = data.confirmed;
-      document.getElementById('recoveredCases').textContent = data.recovered;
-      document.getElementById('criticalCases').textContent = data.critical;
-      document.getElementById('deaths').textContent = data.deaths;
+      document.getElementById('countryName').textContent = data[0].country;
+      document.getElementById('confirmedCases').textContent = data[0].confirmed;
+      document.getElementById('recoveredCases').textContent = data[0].recovered;
+      document.getElementById('criticalCases').textContent = data[0].critical;
+      document.getElementById('deaths').textContent = data[0].deaths;
   
     } catch (error) {
       console.error('Error fetching data:', error);
